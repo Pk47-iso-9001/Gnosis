@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gnosis | Question Paper</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="static/css/question.css">
+</head>
+<body>
+  <div class="div1">
+    <a href='home'>Home</a>
+    <a href="question">Question Paper</a>
+    <a href="entertainment">Entertainment</a>
+    <a href="about">About Us</a>
+    </div>
+<hr>
+<h2 style="text-align:center">Physics</h2>
+<hr>
+<div class="row">
+  <div class="column">
+    <img src="static/image/physics/physics01.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="static/image/physics/physics02.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  
+
+  <div class="column">
+    <img src="static/image/physics/physics_a.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+  </div>
+
+  <div class="column">
+    <img src="static/image/physics/physics_b.jpg" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+  </div>  
+<hr>
+  <div class="column">
+      <img src="static/image/physics/physics_c.jpg" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
+  </div>
+</div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+    <div class="mySlides">
+      <div class="numbertext">1 / 5</div>
+      <img src="static/image/physics/physics01.jpg" style="height:50%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">2 / 5</div>
+      <img src="static/image/physics/physics02.jpg" style="height:50%">
+    </div>
+
+    
+      <div class="mySlides">
+        <div class="numbertext">3 / 4 </div>
+        <img src="static/image/physics/physics_a.jpg"  style="height:50%">
+      </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 5</div>
+      <img src="static/image/physics/physics_b.jpg"  style="height:50%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">5 / 5</div>
+      <img src="static/image/physics/physics_c.jpg"  style="height:50%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption" style="color: white;"> Hello World</p>
+
+      </div>
+      </div>
+      </div>
+      
+<!-- Footer -->
+<footer>
+    Copyright &copy; 2021 | Gnosis 
+  </footer>
+  </body>
+  </html>
+  
+  <script>
+  function openModal() {
+    document.getElementById("myModal").style.display = "block";
+  }
+  
+  function closeModal() {
+    document.getElementById("myModal").style.display = "none";
+  }
+  
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    var captionText = document.getElementById("caption");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+  }
+  </script>
+
+
+</body>
+</html>
+

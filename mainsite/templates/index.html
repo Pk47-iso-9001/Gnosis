@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    {% load static %}
+    <link rel="stylesheet" type= 'text/css' href=" {% static 'css/index.css' %}">
+    <title>Gnosis | Home</title>
+    <link rel="shortcut icon" href="static/image/title.jpg" sizes="96x96" type="image/jpg">
+   <style>
+    @media screen and(max-width:766px){
+      .flip-card{
+        width: 100px;
+      }
+      /*
+      .flip-card .flip-card-inner .flip-card-front img{
+
+        width: 100px;
+        height: 50px;
+        margin-right: 0%;
+        padding-right:0%;
+      } */
+
+    }
+    .flip-card {
+    margin-left: 60%;
+    margin-top: 0%;
+    padding-right:0%;
+    background-color: transparent;
+    width: 33%;
+    height: 200px;
+    border: 1px solid #412d2d;
+    perspective:950px;
+  } 
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visbility: hidden; /* Safari */
+    backface-visibility: hidden; 
+  }
+  a{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-size: 18px ;
+    padding: 1% 4.5% 1% 6.9%;
+  }
+  a:link, a:visited{
+    color: white;
+    border: 1px solid rgb(10, 102, 71);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  a:hover, a:active {
+    background-color: rgb(238, 165, 69);
+    color: rgb(255, 255, 255);
+  }
+  ul{  list-style-type:none;
+    background-color: rgb(255, 255, 255);
+
+}
+#subject{
+    list-style-type:none;
+    background-color: rgb(112, 106, 106);
+    text-align: center;
+}
+#subject{
+
+    padding: 0px 13% ;
+}
+
+
+   #subject{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-size: 18px ;
+    padding: 1% 4.5% 1% 6.9%;
+  }
+   #subject:link, #subject:visited {
+    color: white;
+    border: 1px solid rgb(10, 102, 71);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  #subject:hover, #subject:active {
+    background-color: rgb(238, 165, 69);
+    color: rgb(255, 255, 255);
+  }
+
+   </style>
+
+</head>
+<body>
+    <header>Quotes:</header>
+    <section>How can you say sky is the limit, when there are footprints on the moon.</section>
+    <hr>
+    <div class="div1">
+    <a href=''>Home</a>
+    <a href="question">Question Paper</a>
+    <a href="entertainment">Entertainment</a>
+    <a href="about">About Us</a>
+    </div>
+<hr>
+<!-- Subjects --><ul>
+    <a id="subject" href="physics">Physics</a>
+    <a id="subject" href="chemistry">Chemistry</a>
+    <a id="subject" href="mathematics">Mathematics</a>
+    <a id="subject" href="biology">Biology</a>
+    <a id="subject" href="computer">Computer</a>
+
+  </ul>
+<p><b><mark>Hello World,</mark></b> <br>
+    Here, In this section, we are talking about the features of this webiste, books that will help you and some other stuff :)
+    <br>
+    <br>
+    <b><mark>Features of this Website:)</mark></b><br>
+This website consist of some amazing features. You can get notes, Question papers of different Subjects of class 11. You can also get the lectures of the particular topic
+ from youtube, we will keep the video of that content below that topic. Beside that, we also provide you some entertainment Materials like, the educational webseries you can watch or any other stuff:)<br>
+<br><mark>
+<b>Books that may help you:)</b></mark>
+Here are the list of books that may help you sooner or later. Some of these books are in English Language and some are in Nepali too.<br><b>Note: </b>These aren't the link of the book. It is just the normal text.
+<br>
+    1).The Kite Runner
+    <br>
+    2).The Alchemist
+    <br>
+    3).The Power of Your Subconscious Mind
+<br>
+<br></p>
+
+<div>
+    <p id="bottom_side"><b><mark>Regarding this website:)</mark></b>
+    This website is created just to utilize the few knowledge that we gained. We will try to create  this website just using Html, Css in the frontend and django in the backend. And, Yeah! some code or command in this site is just copied from W3School, Even we don't how they works but yeah! those codes do make this site more useful and benifical. And this website is not ideal, but you can help us to do it. If you want any additional features that you think we should add. You can freely advice us. Any suggestion that helps to make this site more beneficial is highly acceptable.</p>
+</div>
+        <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img width="100%" height="100%" src="static/image/birthday/dummy1.jpg" alt="No Image Available" media="(max-width: 600px)">
+          </div>
+          <div class="flip-card-back">
+            <h4>Happy Birthday _______:)</h4>
+            <h5>On this special day we would like to wish you a many many happy return of the day:)Atlast again <center><br>Happy Birthday:)</center></h5>
+
+          </div>
+        </div>
+      </div>
+<footer>
+    Copyright &copy; 2021 | Gnosis
+</footer>
+</body>
+</html>
